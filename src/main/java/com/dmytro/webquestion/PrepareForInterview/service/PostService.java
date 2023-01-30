@@ -6,11 +6,11 @@ import com.dmytro.webquestion.PrepareForInterview.entity.Post;
 import java.util.List;
 
 public interface PostService {
-    public List<Post> getAllPosts();
+    List<Post> getAllPosts();
 
-    public void savePost(Post post);
-    public Post getPost(long id);
-    public void deletePost(long id);
-    public boolean existsPostById(long id);
+    void savePost(Post post);
+    Post getPost(long id);
+    void deletePost(long id);
+    boolean existsPostById(long id);
 
 }

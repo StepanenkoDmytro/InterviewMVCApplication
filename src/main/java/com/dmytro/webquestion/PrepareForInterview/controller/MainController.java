@@ -17,7 +17,7 @@ public class MainController {
     @Autowired
     private PostService postService;
 
-    @GetMapping("/")
+    @GetMapping("")
     public String main(Model model){
         model.addAttribute("title", "Main");
         return "main";
